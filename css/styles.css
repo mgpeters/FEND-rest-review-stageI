@@ -281,8 +281,7 @@ nav h1 a {
 /* ====================== Responsive ====================== */
 @media screen and (max-width: 549px) {
   header, #map {
-      width: 50%;
-      background-color: purple;
+      width: 100%;
   }
 }
 @media screen and (min-width: 550px) {
@@ -292,9 +291,7 @@ nav h1 a {
 
 }
 @media screen and (min-width: 850px) {
-  header, #map {
-    width: 50%;
-    background-color: purple;
-    font-size: xx-small
+  header, #maincontent, #map-container {
+    width: 100%;
   }
 }
