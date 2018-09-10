@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -276,30 +280,21 @@ nav h1 a {
 
 /* ====================== Responsive ====================== */
 @media screen and (max-width: 549px) {
- /* header {
-      height: 330px;
-  }
-  .header__photo--main {
-      height: 200px;
-  }
-  .featured__photos--photo-box {
-      width: 100%;
+  header, #map {
+      width: 50%;
+      background-color: purple;
   }
 }
 @media screen and (min-width: 550px) {
-  .featured__photos--photo-box {
-      width: 100%;
-  }
+
 }
 @media screen and (min-width: 700px) {
-  .featured__photos--photo-box {
-      width: 50%;
-  }
+
 }
 @media screen and (min-width: 850px) {
-  main, .header, .container {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+  header, #map {
+    width: 50%;
+    background-color: purple;
+    font-size: xx-small
   }
 }
