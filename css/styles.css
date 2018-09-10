@@ -291,6 +291,11 @@ nav h1 a {
 
 }
 @media screen and (min-width: 850px) {
+  body {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   header, #maincontent, #map-container {
     width: 100%;
   }
