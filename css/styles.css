@@ -114,6 +114,9 @@ nav h1 a {
   padding: 15px 5px 15px 5px;
   background-color: #3397DB;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .filter-options h2 {
   color: white;
