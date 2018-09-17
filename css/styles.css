@@ -116,7 +116,6 @@ nav h1 a {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 .filter-options h2 {
   color: white;
@@ -135,6 +134,20 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+}
+@media screen and (max-width: 549px) {
+  .filter-options h2{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 550px) {
+
+}
+@media screen and (min-width: 700px) {
+
+}
+@media screen and (min-width: 850px) {
+
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -202,8 +215,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
+  height: 300px;
   right: 0;
   top: 80px;
   width: 50%;
@@ -301,8 +313,5 @@ nav h1 a {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
-  }
-  header, #maincontent, #map-container {
-    width: 100%;
   }
 }
