@@ -140,9 +140,6 @@ nav h1 a {
     width: 100%;
   }
 }
-@media screen and (min-width: 550px) {
-
-}
 @media screen and (min-width: 700px) {
 
 }
@@ -160,6 +157,7 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -202,6 +200,23 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media screen and (max-width: 549px) {
+
+}
+@media screen and (min-width: 700px) {
+  #restaurants-list li{
+    max-width: 40%;
+  }
+  #restaurant-list ul{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 850px) {
+  #restaurants-list li{
+    max-width: 200px;
+  }
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -306,9 +321,9 @@ nav h1 a {
 @media screen and (min-width: 700px) {
 
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
   body {
-    width: 850px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
