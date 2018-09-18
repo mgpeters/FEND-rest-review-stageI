@@ -231,7 +231,7 @@ nav h1 a {
   height: 300px;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
