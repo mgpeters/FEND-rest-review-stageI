@@ -49,8 +49,8 @@ table {
   min-height: 100%;
 }
 #footer {
-  background-color: rgb(124, 124, 124);
-  color: rgb(41, 41, 41);
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -96,7 +96,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #012d53;
     text-decoration: none;
 }
 
@@ -244,7 +244,7 @@ nav h1 a {
   bottom: 0;
 }
 #restaurant-name {
-  color: #f18200;
+  color: #0b028a;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -285,7 +285,7 @@ nav h1 a {
   flex-direction: column;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #010d41;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
