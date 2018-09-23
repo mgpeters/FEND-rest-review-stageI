@@ -143,12 +143,6 @@ nav h1 a {
     width: 100%;
   }
 }
-@media screen and (min-width: 700px) {
-
-}
-@media screen and (min-width: 850px) {
-
-}
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
@@ -203,9 +197,6 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-@media screen and (max-width: 549px) {
-
 }
 @media screen and (min-width: 700px) {
   #restaurants-list li{
@@ -315,12 +306,6 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-@media screen and (max-width: 549px) {
-
-}
-@media screen and (min-width: 550px) {
-
-}
 @media screen and (min-width: 700px) {
   #reviews-list li {
     max-width: 40%;
@@ -328,15 +313,7 @@ nav h1 a {
 }
 
 /* ====================== Responsive ====================== */
-@media screen and (max-width: 549px) {
 
-}
-@media screen and (min-width: 550px) {
-
-}
-@media screen and (min-width: 700px) {
-
-}
 @media screen and (min-width: 1000px) {
   body {
     width: 1000px;
