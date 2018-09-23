@@ -1,7 +1,7 @@
 /* All serviceworker code was based off the 'Introduction to Service Worker' class code from Udacity 09/23/18ß
 
 */
-const statisCacheName = 'restaurant-review-offline-001';
+const staticCacheName = 'restaurant-review-offline-001';
 
 self.addEventListener('install', function(event){
   event.waitUntil(
@@ -38,13 +38,13 @@ self.addEventListener('activate', function(event){
     caches.keys().then(function(cacheNames){
       return Promise.all(
         cacheNames.filter(function(cacheName){
-          return cacheName.startsWith('restaurant-review-offline-') && cacheName != statisCacheName;
+          return cacheName.startsWith('restaurant-review-offline-') && cacheName != staticCacheName;
         }).map(function(cacheName){
           return cache.delete(cacheName);
         })
       );
     })
-    )
+  )
 })
 
 self.addEventListener('fetch', function(event){
