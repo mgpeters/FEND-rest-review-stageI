@@ -1,11 +1,11 @@
 /* All serviceworker code was based off the 'Introduction to Service Worker' class code from Udacity 09/23/18ß
 
 */
-const cacheName = 'restaurant-review-offline';
+const statisCacheName = 'restaurant-review-offline-001';
 
 self.addEventListener('install', function(event){
   event.waitUntil(
-    caches.open(cacheName)
+    caches.open(staticCacheName)
       .then(function(cache){
         return cache.addAll([
           '/index.html',
@@ -32,6 +32,20 @@ self.addEventListener('install', function(event){
       })
   );
 });
+
+self.addEventListener('activate', function(event){
+  event.waitUntil(
+    caches.keys().then(function(cacheNames){
+      return Promise.all(
+        cacheNames.filter(function(cacheName){
+          return cacheName.startsWith('restaurant-review-offline-') && cacheName != statisCacheName;
+        }).map(function(cacheName){
+          return cache.delete(cacheName);
+        })
+      );
+    })
+    )
+})
 
 self.addEventListener('fetch', function(event){
   event.respondWith(
