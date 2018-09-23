@@ -1,4 +1,4 @@
-if (navigator.serviceWorker) {
+if (navigator.serviceWorker) { //Checks if there is already registration
     navigator.serviceWorker.register('sw.js')
     .then(function(registration){
       console.log(`Registration success!! scope: ${registration.scope}`);
