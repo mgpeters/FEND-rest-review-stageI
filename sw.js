@@ -8,6 +8,7 @@ self.addEventListener('install', function(event){
     caches.open(staticCacheName)
       .then(function(cache){
         return cache.addAll([
+          './', //This is what was killing the refresh of an offline SW
           '/index.html',
           '/restaurant.html',
           '/css/styles.css',
@@ -25,7 +26,17 @@ self.addEventListener('install', function(event){
           '/restaurant.html?id=7',
           '/restaurant.html?id=8',
           '/restaurant.html?id=9',
-          '/restaurant.html?id=10'
+          '/restaurant.html?id=10',
+          './img/1.jpg',
+          './img/2.jpg',
+          './img/3.jpg',
+          './img/4.jpg',
+          './img/5.jpg',
+          './img/6.jpg',
+          './img/7.jpg',
+          './img/8.jpg',
+          './img/9.jpg',
+          './img/10.jpg'
         ]).catch(function(error){
           console.log('Caches open failed: ' + error);
         });
@@ -33,7 +44,7 @@ self.addEventListener('install', function(event){
   );
 });
 
-self.addEventListener('activate', function(event){
+/*self.addEventListener('activate', function(event){
   event.waitUntil(
     caches.keys().then(function(cacheNames){
       return Promise.all(
@@ -45,7 +56,7 @@ self.addEventListener('activate', function(event){
       );
     })
   )
-})
+})*/
 
 self.addEventListener('fetch', function(event){
   event.respondWith(
