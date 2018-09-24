@@ -17,11 +17,11 @@
     <!-- Beginning header -->
     <header>
       <!-- Beginning nav -->
-      <nav>
+      <nav role="banner" aria-label="Primary"> <!--https://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects 09/24/18-->
         <h1><a href="/">Restaurant Reviews</a></h1>
       </nav>
       <!-- Beginning breadcrumb -->
-      <ul id="breadcrumb" >
+      <ul id="breadcrumb" role="banner" aria-label="Secondary"> <!--https://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects 09/24/18-->
         <li><a href="/">Home</a></li>
       </ul>
       <!-- End breadcrumb -->
@@ -41,7 +41,7 @@
       </section>
       <!-- end restaurant -->
       <!-- Beginning map -->
-        <section id="map-container">
+        <section id="map-container" aria-label="map" role="navigation">
           <div id="map"></div>
         </section>
             <!-- End map -->
