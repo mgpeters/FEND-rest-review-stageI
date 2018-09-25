@@ -22,19 +22,19 @@
 
     <main id="maincontent">
       <label for="map"></label>
-      <section tabindex="-1" id="map-container">
-        <div tabindex="-1" id="map"></div>
+      <section aria-label="map" role="navigation" id="map-container">
+        <div id="map"></div>
       </section>
       <section>
         <div class="filter-options">
           <h2>Filter Results</h2>
-          <label role="tablist" for='neighborhood select'>
+          <label aria-label="filter options tablist" role="tablist" for='neighborhood select'>
           <select tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           </label>
             <label for='all'></label>
             <option value="all">All Neighborhoods</option>
           </select>
-          <label for='cuisine select'></label>
+          <label aria-label="filter options cuisine select" role="tablist" for='cuisine select'></label>
           <select tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
             <label for='all'>
             <option value="all">All Cuisines</option>
