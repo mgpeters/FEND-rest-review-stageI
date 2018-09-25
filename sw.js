@@ -8,7 +8,7 @@ self.addEventListener('install', function(event){
     caches.open(staticCacheName)
       .then(function(cache){
         return cache.addAll([
-          './', //This is what was killing the refresh of an offline SW
+          '/', //This is what was killing the refresh of an offline SW
           '/index.html',
           '/restaurant.html',
           '/css/styles.css',
@@ -44,7 +44,7 @@ self.addEventListener('install', function(event){
   );
 });
 
-/*self.addEventListener('activate', function(event){
+self.addEventListener('activate', function(event){
   event.waitUntil(
     caches.keys().then(function(cacheNames){
       return Promise.all(
@@ -56,7 +56,7 @@ self.addEventListener('install', function(event){
       );
     })
   )
-})*/
+})
 
 self.addEventListener('fetch', function(event){
   event.respondWith(
